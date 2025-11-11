@@ -18,7 +18,7 @@ RUN npm install --omit=dev
 
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
-COPY --from=builder next.config.js ./next.config.js
+COPY --from=builder next.config.ts ./next.config.ts
 
 EXPOSE 3000
 
