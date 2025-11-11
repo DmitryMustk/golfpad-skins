@@ -44,7 +44,7 @@ export default function Page() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const apiBase = process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:8080';
+  const apiBase = 'http://193.23.219.152:8080';
 
   const {
     control,
